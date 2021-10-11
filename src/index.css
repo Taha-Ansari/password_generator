@@ -113,6 +113,10 @@ input[type="checkbox"] {
   background-color: white;
 }
 
+.copy-btn :hover{
+  color: rgb(202, 201, 201);
+}
+
 .box1{
  flex: 1;
  margin-right: 15px;

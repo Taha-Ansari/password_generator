@@ -3,8 +3,9 @@ import { FaCopy } from 'react-icons/fa'
 const Password = ({password}) => {
 
   const copyPass = () => {
-    // logic for copying password to clipboard here
-    // password is already stored in the prop 'password'
+    // copy password to clipboard 
+    navigator.clipboard.writeText(password);
+    // trigger copied animation
   }
     return (
         <div className="password-input-box">
