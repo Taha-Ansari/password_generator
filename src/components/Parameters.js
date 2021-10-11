@@ -10,7 +10,14 @@ const Parameters = ({genPass}) => {
     const onSubmit = (e) => {
       // Stops page from reloading on form submit
       e.preventDefault()
-      genPass(passLength,nums, upper, lower, symbols)
+
+      // Need to select atleast 1 checkbox to gen a password
+      if(!nums && !upper && !lower && !symbols){
+        alert("Please select atleast one checkbox")
+      }
+      else{
+        genPass(passLength,nums, upper, lower, symbols)
+      }
     }
 
     return (

@@ -81,8 +81,8 @@ input[type="range"]::-webkit-slider-thumb {
   height: 20px;
 }
 
-/* Voodoo magic to turn checkboxes steel blueS` */
-input[type="checkbox"] { /* change "blue" browser chrome to yellow */
+/* Voodoo magic to turn checkboxes steel blue */
+input[type="checkbox"] { 
   filter: invert(25%) hue-rotate(2deg) brightness(1.4);
 }
 
